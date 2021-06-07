@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Nav from "./Components/Nav";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <h1>CHERRYPICK BANK</h1>
       </header>
+      <Nav />
     </div>
   );
 }
