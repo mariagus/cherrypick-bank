@@ -1,8 +1,6 @@
 import "./App.css";
 import Nav from "./Components/Nav";
-import Form from "./Components/Form";
-import Button from "./Components/Form/Button";
-import Input from "./Components/Form/Input";
+import DeleteAccount from "./Components/DeleteAccount";
 
 function App() {
   return (
@@ -11,11 +9,7 @@ function App() {
         <h1>CHERRYPICK BANK</h1>
       </header>
       <Nav />
-
-      <Form>
-        <Input type="text" />
-        <Button text="Button" />
-      </Form>
+      <DeleteAccount />
     </div>
   );
 }
