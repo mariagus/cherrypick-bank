@@ -1,9 +1,19 @@
-nav {
-  background-color: black;
+.nav {
+  background-color: rgb(122, 122, 122);
   padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 a {
+  font-size: 1.2rem;
   padding: 1rem;
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
 }

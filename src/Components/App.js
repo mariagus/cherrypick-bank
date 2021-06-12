@@ -1,6 +1,5 @@
 import "./App.css";
-import Nav from "./Components/Nav";
-import DeleteAccount from "./Components/DeleteAccount";
+import Nav from "../Components/Nav";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         <h1>CHERRYPICK BANK</h1>
       </header>
       <Nav />
-      <DeleteAccount />
     </div>
   );
 }

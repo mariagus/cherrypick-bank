@@ -2,5 +2,7 @@ button {
   color: white;
   font-size: 1rem;
   background-color: #7a2235;
+  border-radius: 5px;
+  border-style: none;
   padding: 0.5rem;
 }
