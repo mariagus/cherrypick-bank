@@ -9,9 +9,6 @@ function Nav() {
     <Router>
       <ul className="nav">
         <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
           <Link to="/accounts">Accounts</Link>
         </li>
         <li>

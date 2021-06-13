@@ -3,9 +3,10 @@
 }
 
 .newAccount Form {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 button {
@@ -14,4 +15,8 @@ button {
 
 label {
   padding: 1rem;
+}
+
+.newAccount Input {
+  font-size: 1.5rem;
 }
