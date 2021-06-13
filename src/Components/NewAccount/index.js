@@ -3,14 +3,15 @@ import Form from "../Form";
 import "./newAccount.css";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
-import createAccount from "../../utils";
+import { createAccount } from "../../utils";
 
 function NewAccount(props) {
   const [name, setName] = useState("");
   const [balance, setBalance] = useState(0);
   const [message, setMessage] = useState("");
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     createAccount({ name: name, balance, balance }, setMessage);
   };
 

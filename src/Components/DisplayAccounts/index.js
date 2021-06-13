@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Currency from "currency.js";
 import "./displayAccounts.css";
+import { getAccounts } from "../../utils";
 
 function DisplayAccounts() {
   const [accounts, setAccounts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5050/accounts")
-      .then((res) => res.json())
-      .then((data) => setAccounts(data));
+    getAccounts(setAccounts);
   }, []);
+
   return (
     <div>
       <h1>Accounts</h1>
