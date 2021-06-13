@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
+import DeleteAccount from "../DeleteAccount";
 import DisplayAccounts from "../DisplayAccounts";
 import NewAccount from "../NewAccount";
 import "./nav.css";
@@ -27,7 +28,7 @@ function Nav() {
           <Link to="/transfer">Transfer</Link>
         </li>
         <li>
-          <Link to="/transfer">Remove account</Link>
+          <Link to="/delete">Delete account</Link>
         </li>
       </ul>
       <Switch>
@@ -36,8 +37,8 @@ function Nav() {
         {/* <Route exact path="/search" component={}/>
       <Route exact path="/deposit" component={}/>
       <Route exact path="/withdraw" component={}/>
-      <Route exact path="/transfer" component={}/>
-      <Route exact path="/remove" component={}/> */}
+  <Route exact path="/transfer" component={}/>*/}
+        <Route exact path="/delete" component={DeleteAccount} />
       </Switch>
     </Router>
   );

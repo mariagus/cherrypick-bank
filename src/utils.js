@@ -13,3 +13,11 @@ export const getAccounts = async (setState) => {
     .then((res) => res.json())
     .then((data) => setState(data));
 };
+
+export const deleteAccount = async (id, setState) => {
+  await fetch(`http://localhost:5050/accounts/${id}`, {
+    method: "DELETE",
+  })
+    .then((res) => res.json())
+    .then((data) => setState(data.message));
+};

@@ -14,12 +14,10 @@ function DisplayAccounts() {
     <div>
       <h1>Accounts</h1>
       <ul className="accountsListing">
-        {accounts.map(({ name, balance }) => (
-          <div className="account">
+        {accounts.map(({ _id, name, balance }) => (
+          <div key={_id} className="account">
             <li>
-              <span>Name:</span> {name}
-            </li>
-            <li>
+              <span>Name:</span> {name} <br />
               <span>Balance: </span>
               {Currency(balance, { symbol: "£" }).format()}
             </li>

@@ -12,7 +12,7 @@ function NewAccount(props) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    createAccount({ name: name, balance, balance }, setMessage);
+    createAccount({ name, balance }, setMessage);
   };
 
   const handleName = (e) => {
@@ -26,12 +26,12 @@ function NewAccount(props) {
     <div className="newAccount">
       <h1>Create New Account</h1>
       <Form>
-        <label for="fullname">
-          enter full name:{" "}
+        <label>
+          Enter full name:{" "}
           <Input type="text" value={name} handleChange={handleName} />
         </label>
-        <label for="balance">
-          enter balance:{" "}
+        <label>
+          Enter balance:{" "}
           <Input type="number" value={balance} handleChange={handleBalance} />
         </label>
         <Button text="Create" handleClick={handleClick}></Button>
