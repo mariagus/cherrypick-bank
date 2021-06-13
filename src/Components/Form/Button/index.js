@@ -2,7 +2,7 @@ import React from "react";
 import "./button.css";
 
 const Button = (props) => (
-  <button className="btn" href={props.link}>
+  <button className="btn" onClick={props.handleClick}>
     {props.text}
   </button>
 );

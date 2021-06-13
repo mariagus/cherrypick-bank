@@ -1,0 +1,17 @@
+.newAccount {
+  margin: 2rem;
+}
+
+.newAccount Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button {
+  width: fit-content;
+}
+
+label {
+  padding: 1rem;
+}

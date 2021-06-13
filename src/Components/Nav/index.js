@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
-import App from "../App";
 import DisplayAccounts from "../DisplayAccounts";
+import NewAccount from "../NewAccount";
 import "./nav.css";
 
 function Nav() {
@@ -13,6 +13,9 @@ function Nav() {
         </li>
         <li>
           <Link to="/accounts">Accounts</Link>
+        </li>
+        <li>
+          <Link to="/new">New Account</Link>
         </li>
         <li>
           <Link to="/search">Search</Link>
@@ -32,6 +35,7 @@ function Nav() {
       </ul>
       <Switch>
         <Route exact path="/accounts" component={DisplayAccounts} />
+        <Route exact path="/new" component={NewAccount} />
         {/* <Route exact path="/search" component={}/>
       <Route exact path="/deposit" component={}/>
       <Route exact path="/withdraw" component={}/>

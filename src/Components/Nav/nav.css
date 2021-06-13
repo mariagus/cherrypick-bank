@@ -1,9 +1,9 @@
 .nav {
-  background-color: rgb(122, 122, 122);
+  background-color: rgba(54, 7, 7, 0.384);
   padding: 1rem;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 }
 
